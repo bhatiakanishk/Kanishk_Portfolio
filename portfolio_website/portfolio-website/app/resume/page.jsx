@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaSwift, FaJava, FaUikit, FaAngular, FaSass, FaLinux, FaUbuntu, FaApple, FaJira, FaWindows } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiJquery, SiMysql, SiPostgresql, SiFirebase, SiMongodb, SiSanity, SiAmazonaws, SiGooglecloud, SiGit, SiGitlab, SiTerraform, SiPacker, SiKubernetes, SiDocker, SiAnsible, SiJenkins, SiGraphql, SiPostman, SiJson, SiYaml, SiXcode, SiCplusplus, SiGnubash } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -10,7 +10,10 @@ import { motion } from 'framer-motion';
 
 const about = {
     title: "About Me",
-    description: "I am a Software Engineer with experience in building web applications using JavaScript, Swift, React, Node.js, and other modern technologies. I am passionate about learning new technologies and building projects that solve real-world problems.",
+    description: `
+        I'm a software engineer with a Master's in Information Systems from Northeastern University and a Bachelor's in Computer Engineering from the University of Mumbai. I love building web and mobile apps using cool technologies like JavaScript, Swift, React, and Node.js. I'm all about learning new things and working on projects that make a real impact.
+
+        When I'm not coding, you'll probably find me watching Formula 1, gaming, or getting lost in sim racing. These hobbies keep me energized and always looking for new ways to push the limits of technology.`,
     info: [
         {
             fieldName: "Name",
@@ -72,32 +75,172 @@ const skills = {
     description: "TESTER",
     skillList: [
         {
+            icon: <FaSwift />,
+            name: "swift",
+        },
+        {
             icon: <FaHtml5 />,
-            name: "html 5",
+            name: "HTML 5",
         },
         {
             icon: <FaCss3 />,
-            name: "css 3",
+            name: "CSS 3",
         },
         {
             icon: <FaJs />,
-            name: "javascript",
+            name: "JavaScript",
         },
         {
             icon: <FaReact />,
-            name: "react.js",
+            name: "React.js",
         },
         {
             icon: <SiNextdotjs />,
-            name: "next.js",
+            name: "Next.js",
         },
         {
             icon: <SiTailwindcss />,
-            name: "tailwind.css",
+            name: "Tailwind.CSS",
         },
         {
             icon: <FaNodeJs />,
-            name: "node.js",
+            name: "Node.js",
+        },
+        {
+            icon: <FaPython />,
+            name: "Python 3",
+        },
+        {
+            icon: <FaJava />,
+            name: "Java",
+        },
+        {
+            icon: <FaUikit />,
+            name: "UIKit",
+        },
+        {
+            icon: <SiTypescript />,
+            name: "TypeScript",
+        },
+        {
+            icon: <SiCplusplus />,
+            name: "C++",
+        },
+        {
+            icon: <FaAngular />,
+            name: "Angular",
+        },
+        {
+            icon: <FaSass />,
+            name: "Sass",
+        },
+        {
+            icon: <SiJquery />,
+            name: "jQuery",
+        },
+        {
+            icon: <SiXcode />,
+            name: "Xcode",
+        },
+        {
+            icon: <SiMysql />,
+            name: "MySQL",
+        },
+        {
+            icon: <SiPostgresql />,
+            name: "PostgreSQL",
+        },
+        {
+            icon: <SiFirebase />,
+            name: "Firebase",
+        },
+        {
+            icon: <SiMongodb />,
+            name: "MongoDB",
+        },
+        {
+            icon: <SiSanity />,
+            name: "Sanity",
+        },
+        {
+            icon: <SiAmazonaws />,
+            name: "AWS",
+        },
+        {
+            icon: <SiGooglecloud />,
+            name: "Google Cloud",
+        },
+        {
+            icon: <SiGit />,
+            name: "Git",
+        },
+        {
+            icon: <SiGnubash />,
+            name: "Bash Script",
+        },
+        {
+            icon: <SiGitlab />,
+            name: "Gitlab",
+        },
+        {
+            icon: <SiTerraform />,
+            name: "Terraform",
+        },
+        {
+            icon: <SiPacker />,
+            name: "Packer",
+        },
+        {
+            icon: <SiKubernetes />,
+            name: "Kubernetes",
+        },
+        {
+            icon: <SiDocker />,
+            name: "Doscker",
+        },
+        {
+            icon: <SiAnsible />,
+            name: "Ansible",
+        },
+        {
+            icon: <SiJenkins />,
+            name: "Jenkins",
+        },
+        {
+            icon: <SiYaml />,
+            name: "Yaml",
+        },
+        {
+            icon: <SiGraphql />,
+            name: "GraphQL",
+        },
+        {
+            icon: <SiPostman />,
+            name: "Postman",
+        },
+        {
+            icon: <SiJson />,
+            name: "JSON",
+        },
+        {
+            icon: <FaLinux />,
+            name: "Linux",
+        },
+        {
+            icon: <FaUbuntu />,
+            name: "Ubuntu",
+        },
+        {
+            icon: <FaApple />,
+            name: "macOS",
+        },
+        {
+            icon: <FaWindows />,
+            name: "Windows",
+        },
+        {
+            icon: <FaJira />,
+            name: "Jira",
         },
     ]
 }
@@ -106,7 +249,7 @@ const Resume = () => {
     return (
         <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}}} className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
             <div className="container mx-auto">
-                <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+                <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px]">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="about">About Me</TabsTrigger>
                         <TabsTrigger value="experience">Experience</TabsTrigger>
