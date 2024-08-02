@@ -18,10 +18,12 @@ const Home = () => {
               I design and develop experiences that make people's lives simple.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span>Download Resume</span>
-                <FiDownload className="text-xl"/>
-              </Button>
+              <a href="/assets/Kanishk Bhatia.pdf" download>
+                <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+                  <span>Download Resume</span>
+                  <FiDownload className="text-xl"/>
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social containerStyles="flex gap-6" iconStyles="w-12 h-12 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>
               </div>
@@ -37,4 +39,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
