@@ -30,6 +30,36 @@ const projects = [
         image: '/assets/money.png',
         live: "",
         github: "https://github.com/bhatiakanishk/Expense-Tracker",
+    },
+    {
+        num: '03',
+        category: 'AWS',
+        title: 'AWS enabled E-Commerce Platform',
+        description: 'Automated deployment of webapp on AWS',
+        stack: [{name: "AWS"}, {name: "JavaScript"}, {name: "Shell"}, {name: "Terraform"}],
+        image: '/assets/AWS.png',
+        live: "",
+        github: "https://github.com/orgs/kanishkbhatia/repositories",
+    },
+    {
+        num: '04',
+        category: 'Python',
+        title: 'Menace Machine',
+        description: 'Python application simulating the game of Tic-Tac-Toe using Reinforcement Learning',
+        stack: [{name: "Python"}, {name: "Reinforcement Learning"}],
+        image: '/assets/tic-tac-toe.png',
+        live: "",
+        github: "https://github.com/bhatiakanishk/INFO6205_FinalProject",
+    },
+    {
+        num: '05',
+        category: 'Machine Learning',
+        title: 'Doodle Recognition',
+        description: 'Doodle Recognition System with Interactive Visualization',
+        stack: [{name: "Machine Learning"}, {name: "Python"}, {name: "HTML 5"}, {name: "CSS 3"}],
+        image: '/assets/doodle.png',
+        live: "",
+        github: "https://github.com/bhatiakanishk/Doodle_recognition_project",
     }
 ]
 
@@ -57,6 +87,7 @@ const Work = () => {
                                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                                     {project.category}
                                 </h2>
+                                <p className="text-white/80 text-[30px]">{project.title}</p>
                                 <p className="text-white/60">{project.description}</p>
                                 <ul className="flex-gap-4">
                                     {project.stack.map((item, index) => {
@@ -103,7 +134,7 @@ const Work = () => {
                                         </SwiperSlide>
                                     )
                                 })}
-                                <WorkSliderBtns />
+                                <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
                         </Swiper>
                     </div>
                 </div>
