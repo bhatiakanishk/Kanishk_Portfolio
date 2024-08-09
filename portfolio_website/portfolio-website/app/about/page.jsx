@@ -9,25 +9,21 @@ const abouts = [
         num: '01',
         title: 'iOS Developer',
         description: 'Design and develop mobile applications for Apple devices such as iPhones and iPads. Specialize in creating intuitive and visually appealing interfaces using iOS-specific technologies such as Swift.',
-        href: ""
     },
     {
         num: '02',
         title: 'Software Engineer',
         description: 'Develop, test, and maintain software applications and systems across a variety of platforms. Utilize programming languages such as Java and Python to create efficient and scalable software solutions. Work collaboratively with cross-functional teams to design, implement, and improve software architecture.',
-        href: ""
     },
     {
         num: '03',
         title: 'Full-Stack Engineer',
         description: 'Proficient in both front-end and back-end development, capable of building and deploying a complete web application from scratch. Expertise in multiple programming languages, databases, and frameworks, and skilled in handling the entire web development process.',
-        href: ""
     },
     {
         num: '04',
         title: 'Cloud Engineer',
         description: 'Designing, building, and maintaining the infrastructure and architecture of cloud-based systems. Deploying and managing cloud-based applications and services, utilizing cloud platforms such as AWS.',
-        href: ""
     },
 ]
 
@@ -55,4 +51,4 @@ const About = () => {
     )
 }
 
-export default About
+export default About;
