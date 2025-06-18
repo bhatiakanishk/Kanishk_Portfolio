@@ -40,9 +40,14 @@ const experience = {
     description: "TESTER",
     items: [
         {
-            company: "WorkOrderWizard",
-            position: "Founding Software Engineer",
-            duration: "Oct 2023 - Present",
+            company: "Akoya",
+            position: "Software Engineer",
+            duration: "Jun 2025 - Present",
+        },
+        {
+            company: "WorkOrderWizard LLC",
+            position: "Founding Engineer",
+            duration: "Oct 2023 - Jun 2025",
         },
         {
             company: "Ultimate Computech Pvt Ltd",
