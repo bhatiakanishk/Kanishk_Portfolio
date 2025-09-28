@@ -61,7 +61,7 @@ const Photo = () => {
                         <Image
                             src="/assets/photo.png"
                             priority
-                            quality
+                            quality={100}
                             fill
                             alt=""
                             className="object-cover"
